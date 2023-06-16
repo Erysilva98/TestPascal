@@ -1,4 +1,4 @@
-{ Programa: Sistema de acesso a atividades de lógica de programação
+{ Programa: Sistema de acesso a atividades de lï¿½gica de programaï¿½ï¿½o
   Data    : 04/05/2023
   Autor   : Ysterllane }
 
@@ -10,25 +10,25 @@ Var cod, pw, n1, n2, n3, n4, soma, s, nvs, pa, va, grat, impost, sb, d, txj, r, 
     
 Begin
   Gotoxy (20,12);
-  Write ('Usuário: ');
+  Write ('Usuï¿½rio: ');
   Readln(cod);
     
-  if cod = 1234 then   // Se o código do usuario for correto
-	   Begin             // no desvio condicional, o bloco é iniciado/acessado e seguido.
+  if cod = 1234 then   // Se o cï¿½digo do usuario for correto
+	   Begin             // no desvio condicional, o bloco ï¿½ iniciado/acessado e seguido.
 
        Gotoxy (20,13);
        Write ('Senha  : ');
-	     Read  (pw);     // A senha será lida, porque se o codigo do usuário foi correto/verdadeiro: "cod = 1234" = true.
+	     Read  (pw);     // A senha serï¿½ lida, porque se o codigo do usuï¿½rio foi correto/verdadeiro: "cod = 1234" = true.
        
-			 if pw = 9999 then   // Agora testa a senha, do mesmo modo que testado o codigo do usuário: "pw = 9999" = true ou false ?
+			 if pw = 9999 then   // Agora testa a senha, do mesmo modo que testado o codigo do usuï¿½rio: "pw = 9999" = true ou false ?
 					begin
              textcolor(1);        // cor para letras (0-15)
              textbackground(15);  // cor para o fundo (0-15)
              Gotoxy (20,15);
 			       Write (' => Acesso Permitido! Tecle Algo para continuar.');  // Desvio condicional para resultado: TRUE
-             Readkey;  { Aguarda até uma tecla seja pressionada }	
+             Readkey;  { Aguarda atï¿½ uma tecla seja pressionada }	
              
-             // No blocos a partir deste ponto serão construidos as rotinas de acesso 
+             // No blocos a partir deste ponto serï¿½o construidos as rotinas de acesso 
              
              // Inicio do menu principal
              textbackground(0);  // cor para o fundo (0-15)
@@ -49,11 +49,11 @@ Begin
              Writeln('------------------------');             
              TextColor(7);                         
              Gotoxy (30,17);                          
-             Write('Entre com a opção: '); Readln (opcao);
+             Write('Entre com a opï¿½ï¿½o: '); Readln (opcao);
              opcao := (opcao);
              // Fim do menu principal
              
-             // Inicio do menu secundário, com a seleção tipo: CASO
+             // Inicio do menu secundï¿½rio, com a seleï¿½ï¿½o tipo: CASO
              Case opcao of 
  						      1: Begin    
                           ClrScr;
@@ -67,26 +67,26 @@ Begin
 										      Writeln('================================================================================');
                           Writeln;
 													TextColor(7);
-													Writeln('1) Faça um algoritmo que receba quatro números inteiros, calcule e mostre a soma desses números.');
+													Writeln('1) Faï¿½a um algoritmo que receba quatro nï¿½meros inteiros, calcule e mostre a soma desses nï¿½meros.');
                           Writeln;
-													Writeln('2) Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');
+													Writeln('2Faï¿½a um algoritmo que receba trï¿½s notas, calcule e mostre a mï¿½dia aritmï¿½tica entre elas.');
                           Writeln;
-													Writeln('3) Faça um algoritmo que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada.');
+													Writeln('3Faï¿½a um algoritmo que receba trï¿½s notas e seus respectivos pesos, calcule e mostre a mï¿½dia ponderada.');
                           Writeln;
-													Writeln('4) Algoritmo que receba o salário de um funcionário, calcule e mostre o novo salário, com um aumento de 25%');
+													Writeln('4) Algoritmo que receba o salï¿½rio de um funcionï¿½rio, calcule e mostre o novo salï¿½rio, com um aumento de 25%');
                           Writeln;
-													Writeln('5) Algoritmo que recebe salário de um funcionário e o aumento, calcule e mostre o novo salário.');
+													Writeln('5) Algoritmo que recebe salï¿½rio de um funcionï¿½rio e o aumento, calcule e mostre o novo salï¿½rio.');
                           Writeln;
-													Writeln('6) Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem + 5 por cento e paga imposto de 7%');
+													Writeln('6) Algoritmo que receba o salï¿½rio de um funcionï¿½rio, calcule o salï¿½rio, sabendo que tem + 5 por cento e paga imposto de 7%');
                           Writeln;
-													Writeln('7) Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem aumento de R$ 50 e imposto de 10%');
+													Writeln('7Algoritmo que receba o salï¿½rio de um funcionï¿½rio, calcule o salï¿½rio, sabendo que tem aumento de R$ 50 e imposto de 10%');
                           Writeln;
-													Writeln('8) Algoritmo que receba o valor de um depósito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.'); 	
+													Writeln('8Algoritmo que receba o valor de um depï¿½sito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.'); 	
 										      Writeln; TextColor(10);
 													Writeln('================================================================================');
                           TextColor(4);
 													Writeln;
-													Write('Entre com a opção: '); Readln (opAtiv);
+													Write('Entre com a opï¿½ï¿½o: '); Readln (opAtiv);
                           opAtiv := (opAtiv);
                           end;
                        End;
@@ -100,31 +100,31 @@ Begin
                           TextColor(10); Writeln;
 										      Writeln('================================================================================');
                           TextColor(7); Writeln;	
-										      Writeln('1) Algoritmo que descobre o < número entre 3.'); 
+										      Writeln('1Algoritmo que descobre o < nï¿½mero entre 3.'); 
 													Writeln;
-										      writeln('2) Receba 2 inteiros e ver qual é o >. Existe a possibilidade dos números serem =.'); 
+										      writeln('2) Receba 2 inteiros e ver qual ï¿½ o >. Existe a possibilidade dos nï¿½meros serem =.'); 
 													Writeln;
-										      writeln('3) Informe um inteiro e determine se é par ou ímpar.'); 
+										      writeln('3) Informe um inteiro e determine se ï¿½ par ou ï¿½mpar.'); 
 													Writeln;
-										      writeln('4) Ler 2 inteiros M e N e determinar se M é divisível por N.'); 
+										      writeln('4) Ler 2 inteiros M e N e determinar se M ï¿½ divisï¿½vel por N.'); 
 													Writeln;
-													writeln('5) Receba: peso, H e o sexo, calcule e imprima o seu peso ideal.');  
-													WRITELN('Dizendo se está acima, abaixo ou no peso ideal. Utilize:');
-													writeln('Homens: Peso ideal = 72,7 x h – 58, mulheres: Peso ideal = 62,1 x h – 44,7'); 
+													writeln('5Receba: peso, H e o sexo, calcule e imprima o seu peso ideal.');  
+													WRITELN('Dizendo se estï¿½ acima, abaixo ou no peso ideal. Utilize:');
+													writeln('Homens: Peso ideal = 72,7 x h ï¿½ 58, mulheres: Peso ideal = 62,1 x h ï¿½ 44,7'); 
 													Writeln;
-													writeln('6) Diga tempo do serviço e o salário, calcular e exibir a grat que receberá.');
+													writeln('6) Diga tempo do serviï¿½o e o salï¿½rio, calcular e exibir a grat que receberï¿½.');
 													Writeln;
-                          writeln('7) Ler notas das avaliações, calc a média e informar: aprovado ou não.');
+                          writeln('7Ler notas das avaliaï¿½ï¿½es, calc a mï¿½dia e informar: aprovado ou nï¿½o.');
                           Writeln;
-                          writeln('8) Receba 3 notas, calc e imprima a média final e imprima: A, B, C, D ou E.');
+                          writeln('8Receba 3 notas, calc e imprima a mï¿½dia final e imprima: A, B, C, D ou E.');
                           Writeln;
-                          writeln('9) Informe o n° de hrs extras e o n° de hrs q o funcionário faltou e calc seu prêmio.');
+                          writeln('9) Informe o nï¿½ de hrs extras e o nï¿½ de hrs q o funcionï¿½rio faltou e calc seu prï¿½mio.');
                           Writeln;
-                          writeln('10) Solicite o consumo do cliente em quilowatts e informe qual será o valor da conta.');
+                          writeln('10) Solicite o consumo do cliente em quilowatts e informe qual serï¿½ o valor da conta.');
                           Writeln;
- 										      writeln('11) Receba: a) o código do produto comprado; b) a quantidade comprada do produto. Calcule e exiba:');
+ 										      writeln('11) Receba: ao cï¿½digo do produto comprado; b) a quantidade comprada do produto. Calcule e exiba:');
                           writeln;
-													writeln('O preço unitário do produto comprado de acordo com a tabela A;');
+													writeln('O preï¿½o unitï¿½rio do produto comprado de acordo com a tabela A;');
                           writeln('O valor total da compra;');
                           writeln('O desconto sobre o total da compra, segundo a tabela B;');
                           writeln('O valor final da compra depois de aplicado o desconto.');
@@ -132,31 +132,31 @@ Begin
 													Writeln('================================================================================');
 													Writeln; 
 													TextColor(10);
- 			                    Write('Entre com a opção: '); Readln(opAtiv);
+ 			                    Write('Entre com a opï¿½ï¿½o: '); Readln(opAtiv);
                           opAtiv :=(opAtiv);
 											 End;
                         
 
               End;
-              // Fim do menu secundário
+              // Fim do menu secundï¿½rio
               
-             // Inicio das resolucoes das questões da atividade 1
+             // Inicio das resolucoes das questï¿½es da atividade 1
              if opcao = 1 then
                 Begin
                    Case opAtiv of 
  			      			      1: Begin    
                                 ClrScr;
                                 TextColor(10);
-																Writeln(' 1 - Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números.'); 
+																Writeln(' 1 - Faï¿½a um programa que receba quatro nï¿½meros inteiros, calcule e mostre a soma desses nï¿½meros.'); 
 																writeln;
 			      		        				Writeln('==================================================================');
                                 TextColor(4); writeln;
-                                write('Digite um número: '); readln(n1); writeln;
-                                write('Digite um número: '); readln(n2); writeln;
-                                write('Digite um número: '); readln(n3); writeln;
-                                write('Digite um número: '); readln(n4); writeln;
+                                write('Digite um nï¿½mero: '); readln(n1); writeln;
+                                write('Digite um nï¿½mero: '); readln(n2); writeln;
+                                write('Digite um nï¿½mero: '); readln(n3); writeln;
+                                write('Digite um nï¿½mero: '); readln(n4); writeln;
                                    soma := (n1 + n2 + n3 + n4);
-																writeln('Sua soma é: ',soma:2:2); writeln;
+																writeln('Sua soma ï¿½: ',soma:2:2); writeln;
                                 TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 	
@@ -166,7 +166,7 @@ Begin
  			      			      2: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('2 - Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');  
+																Writeln('2 - Faï¿½a um algoritmo que receba trï¿½s notas, calcule e mostre a mï¿½dia aritmï¿½tica entre elas.');  
 																writeln;
 			      		        				Writeln('==================================================================');  writeln;
                                 TextColor(4);
@@ -174,9 +174,9 @@ Begin
 	                              write('Diga a nota 2: '); read(nt2); writeln;
 	                              write('Diga a nota 3: '); read(nt3); writeln;
                                    ma:= (nt1+nt2+nt3)/3;	 
-                                writeln('Sua média aritimética é: ', ma:2:2);  writeln;
+                                writeln('Sua mï¿½dia aritimï¿½tica ï¿½: ', ma:2:2);  writeln;
                                    adicao := nt1 + nt2 + nt3 + nt4;
-																writeln('Sua soma é: ', adicao:2:2); writeln;
+																writeln('Sua soma ï¿½: ', adicao:2:2); writeln;
                                 TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 	
@@ -186,7 +186,7 @@ Begin
 						            3: Begin
 												        ClrScr;
                                 TextColor(10);
-																Writeln('3 - Faça um algoritmo que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada.'); 
+																Writeln('3 - Faï¿½a um algoritmo que receba trï¿½s notas e seus respectivos pesos, calcule e mostre a mï¿½dia ponderada.'); 
 																writeln;
 			      		        				Writeln('=================================================================='); writeln;
                                 TextColor(4);    
@@ -198,7 +198,7 @@ Begin
 	                                write('Diga o peso 3: '); read(p3); writeln;
 	  
                                 mp:= (nt1 * p1 + nt2 * p2 + nt3 * p3)/(p1+p2+p3);	 
-                                write('Sua média ponderada é: ', mp:2:2); writeln; writeln;
+                                write('Sua mï¿½dia ponderada ï¿½: ', mp:2:2); writeln; writeln;
                                 TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -208,13 +208,13 @@ Begin
                         4: Begin    
 															 ClrScr;
                                 TextColor(10);
-																Writeln('4 - Algoritmo que receba o salário de um funcionário, calcule e mostre o novo salário, com um aumento de 25%');
+																Writeln('4 - Algoritmo que receba o salï¿½rio de um funcionï¿½rio, calcule e mostre o novo salï¿½rio, com um aumento de 25%');
 			      		        				writeln;
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);
-																write('Salário: '); read(s); writeln;
+																write('Salï¿½rio: '); read(s); writeln;
                                    nvs:=(s*25)/100+s;
-                                write('Novo salário: ', nvs:2:2); writeln; writeln;
+                                write('Novo salï¿½rio: ', nvs:2:2); writeln; writeln;
 																TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -224,15 +224,15 @@ Begin
 						            5: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('5 - Algoritmo que recebe salário de um funcionário e o aumento, calcule e mostre o novo salário.'); 
+																Writeln('5 - Algoritmo que recebe salï¿½rio de um funcionï¿½rio e o aumento, calcule e mostre o novo salï¿½rio.'); 
 																writeln;
 			      		        				Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Salário: '); read(s); writeln;
+                                write('Salï¿½rio: '); read(s); writeln;
                                 write('Percentual de aumento: '); read(pa); writeln;
                                    nvs:=(s*pa)/100+s;
                                    va:=(s*pa)/100;
-                                writeln('Novo salário: ', nvs:2:2); writeln;
+                                writeln('Novo salï¿½rio: ', nvs:2:2); writeln;
                                 write('Valor do aumento: ', va:2:2); writeln; writeln;
 																TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
@@ -243,14 +243,14 @@ Begin
 												6: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('6 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem + 5 por cento e paga imposto de 7%');
+																Writeln('6 - Algoritmo que receba o salï¿½rio de um funcionï¿½rio, calcule o salï¿½rio, sabendo que tem + 5 por cento e paga imposto de 7%');
 			      		        				writeln(' ');
 																Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Salário: '); read(s); writeln;
+                                write('Salï¿½rio: '); read(s); writeln;
                                    grat:= (s*5/100+s);
                                    impost:= grat-(grat*7/100);
-                                writeln('Salário a receber: ', impost:2:2 ); writeln;
+                                writeln('Salï¿½rio a receber: ', impost:2:2 ); writeln;
 																TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -260,13 +260,13 @@ Begin
 												7: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('7 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem aumento de R$ 50 e imposto de 10%');
+																Writeln('7 - Algoritmo que receba o salï¿½rio de um funcionï¿½rio, calcule o salï¿½rio, sabendo que tem aumento de R$ 50 e imposto de 10%');
 			      		        				writeln;
 																Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Escreva seu salário base: '); read(sb) ; writeln;
+                                write('Escreva seu salï¿½rio base: '); read(sb) ; writeln;
                                    impost:=(sb*10/100);
-	                              write('Salário a receber: ', sb-impost+50:2:2); writeln; writeln;
+	                              write('Salï¿½rio a receber: ', sb-impost+50:2:2); writeln; writeln;
 	                              TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -276,11 +276,11 @@ Begin
 												8: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('8 - Algoritmo que receba o valor de um depósito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.');
+																Writeln('8 - Algoritmo que receba o valor de um depï¿½sito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.');
 			      		        				writeln;
 																Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Digite o valor do depósito: '); read(d); writeln;
+                                write('Digite o valor do depï¿½sito: '); read(d); writeln;
                                 write('Digite o valor da taxa de juros: '); read(txj); writeln;
                                 writeln('Rendimento: ', d*txj/100:2:2); writeln;
                                 write('Valor total depois do rendimento: ', (d*txj/100)+d:2:2); writeln; writeln;
@@ -293,34 +293,34 @@ Begin
                    End;
 
                 end
-                // Fim das resolucoes das questões da atividade 1
+                // Fim das resolucoes das questï¿½es da atividade 1
               
 					end;
-					  //inicio das resoluções da atividade 2
+					  //inicio das resoluï¿½ï¿½es da atividade 2
 					if opcao = 2 then
                 Begin
                    Case opAtiv of 
  			      			      1: Begin
  			      			              ClrScr;
                                 TextColor(10);
-																Writeln(' 1 - Escreva um algoritmo para descobrir o menor número entre três valores digitados.'); 
+																Writeln(' 1 - Escreva um algoritmo para descobrir o menor nï¿½mero entre trï¿½s valores digitados.'); 
 																writeln;
 			      		        				Writeln('=====================================================================================');
                                 TextColor(4); writeln;
-                                write('Digite um número: '); readln(n1); writeln;
-                                write('Digite um número: '); readln(n2); writeln;
-                                write('Digite um número: '); readln(n3); writeln;
-                                   if (n1 <= n2) and (n1 <= n3) then
+                                write('Digite um nï¿½mero: '); readln(n1); writeln;
+                                write('Digite um nï¿½mero: '); readln(n2); writeln;
+                                write('Digite um nï¿½mero: '); readln(n3); writeln;
+                                   if (n1 <= n2) and (n1 <= n3then
                                       begin
-                                        write('O menor número é: ', n1:2:2); 
+                                        write('O menor nï¿½mero ï¿½: ', n1:2:2); 
                                       end;
-                                   if (n2 <= n1) and (n2 <= n3) then
+                                   if (n2 <= n1) and (n2 <= n3then
 																	    begin
-																	      write('O menor número é: ', n2:2:2);
+																	      write('O menor nï¿½mero ï¿½: ', n2:2:2);
 																			end; 
-																	 if (n3 <= n2) and (n3 <= n1) then
+																	 if (n3 <= n2) and (n3 <= n1then
 																	    begin
-																	      write('O menor número é: ', n3:2:2);
+																	      write('O menor nï¿½mero ï¿½: ', n3:2:2);
 																			end;		  
                                 TextColor(10);
 																writeln; writeln; 
@@ -333,7 +333,7 @@ Begin
 												2: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('2 - Ler 2 inteiros quaisquer e decidir qual deles é o maior. Existe a possibilidade de serem iguais.');  
+																Writeln('2 - Ler 2 inteiros quaisquer e decidir qual deles ï¿½ o maior. Existe a possibilidade de serem iguais.');  
 																writeln;
 			      		        				Writeln('====================================================================================================');  writeln(' ');
                                 TextColor(4);
@@ -341,11 +341,11 @@ Begin
                                 write('Digite um inteiro: '); readln(n2); writeln;
                                    if (n1 >= n2) then
                                       begin
-                                        write('O maior número é: ', n1:2:2); 
+                                        write('O maior nï¿½mero ï¿½: ', n1:2:2); 
                                       end;
-                                   if (n2 >= n1) then
+                                   if (n2 >= n1then
 																	    begin
-																	      write('O maior número é: ', n2:2:2);
+																	      write('O maior nï¿½mero ï¿½: ', n2:2:2);
 																			end;
 																TextColor(10);
 																writeln; 
@@ -358,18 +358,18 @@ Begin
 												3: Begin
 												        ClrScr;
                                 TextColor(10);
-																Writeln('3 - Ler um número inteiro e determinar se ele é par ou ímpar. O resto da divisão de um número par por 2 é zero; se o número for impar, o resto é 1.'); 
+																Writeln('3 - Ler um nï¿½mero inteiro e determinar se ele ï¿½ par ou ï¿½mpar. O resto da divisï¿½o de um nï¿½mero par por 2 ï¿½ zero; se o nï¿½mero for impar, o resto ï¿½ 1.'); 
 																writeln;
 			      		        				Writeln('=========================================================================================================='); writeln(' ');
                                 TextColor(4);
                                 write('Digite um inteiro: '); readln(num1); writeln;
                                    if (num1 mod 2 = 0) then 
                                       begin
-                                        write('O número é par.'); 
+                                        write('O nï¿½mero ï¿½ par.'); 
                                       end
                                   else
 																	    begin
-																	      write('O número é impar.');
+																	      write('O nï¿½mero ï¿½ impar.');
 																			end;
 																TextColor(10);
 																writeln; 
@@ -383,16 +383,16 @@ Begin
 															 ClrScr;
                                 TextColor(10);
 																Writeln('4)
-																 Ler 2 inteiros M e N e determinar se M é divisível por N. Se o resto da divisão de M por N é 0 (zero), então M é divisível por N.');
+																 Ler 2 inteiros M e N e determinar se M ï¿½ divisï¿½vel por N. Se o resto da divisï¿½o de M por N ï¿½ 0 (zero), entï¿½o M ï¿½ divisï¿½vel por N.');
 			      		        				writeln;
 																Writeln('=================================================================='); writeln;
                                 TextColor(4);
                                 write('Digite um inteiro: '); readln(num1); writeln;
                                 write('Digite um inteiro: '); readln(num2); writeln;
                                    if (num1 mod num2 = 0) then 
-                                      write('O número ', num1, ' é divisível pelo número ', num2)
+                                      write('O nï¿½mero ', num1, ' ï¿½ divisï¿½vel pelo nï¿½mero ', num2)
                                    else
-																	    write('O número ', num1, ' não é divisível pelo número ', num2);
+																	    write('O nï¿½mero ', num1, ' nï¿½o ï¿½ divisï¿½vel pelo nï¿½mero ', num2);
 																TextColor(10); 
 														    writeln;
       										      Writeln('------------------------------------------------------------------'); writeln;
@@ -403,7 +403,7 @@ Begin
 												5: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('5 – Receba peso, h e sexo de uma pessoa, calc e imprima seu peso ideal, informando se está abaixo ou acima do mesmo.');
+																Writeln('5 ï¿½ Receba peso, h e sexo de uma pessoa, calc e imprima seu peso ideal, informando se estï¿½ abaixo ou acima do mesmo.');
                                 Writeln('Homens: Peso ideal = 72,7 x Altura - 58;'); 
 																writeln('Mulheres: Peso ideal = 62,1 x Altura - 44,7 '); 
 																writeln;
@@ -411,26 +411,26 @@ Begin
                                 TextColor(4);									 					 
  			      			              write('Diga seu peso: '); readln(p1); writeln;
 																write('Diga sua altura: '); readln(h); writeln;
-																write('Você é homem ou mulher? '); readln(sexo); writeln;
-																   if (sexo = 'homem') then
+																write('Vocï¿½ ï¿½ homem ou mulher? '); readln(sexo); writeln;
+																   if (sexo = 'homem'then
 																      Begin
 																       pi := (72.7 * h) - 58;  
-																         if (p1 = pi) then 
+																         if (p1 = pithen 
 																				     write('Seu peso: ', p1, ' coincide com o peso ideal')
-																				 else if (p1 > pi) then 
-																				     write('Seu peso está acima do peso ideal: ', pi:2:2)
+																				 else if (p1 > pithen 
+																				     write('Seu peso estï¿½ acima do peso ideal: ', pi:2:2)
 																				 else if (p1 < pi) then 
-																				     write('Seu peso está abaixo do peso ideal: ', pi:2:2); 
+																				     write('Seu peso estï¿½ abaixo do peso ideal: ', pi:2:2); 
 																			End;
-																    if (sexo = 'mulher') then
+																    if (sexo = 'mulher'then
 																		   Begin
-																		      pi := ( 62.1 * h ) - 44.7 ;
-																		        if (p1 = pi) then
+																		      pi := 62.1 * h ) - 44.7 ;
+																		        if (p1 = pithen
 																		           write('Seu peso: ', p1, ' coincide com o peso ideal')
-																            else if (p1 > pi) then
-																               write('Seu peso está acima do peso ideal: ', pi:2:2)
+																            else if (p1 > pithen
+																               write('Seu peso estï¿½ acima do peso ideal: ', pi:2:2)
 																            else if (p1 < pi) then
-																				       write('Seu peso está abaixo do peso ideal: ', pi:2:2)
+																				       write('Seu peso estï¿½ abaixo do peso ideal: ', pi:2:2)
 																			 End;  
  			      			              TextColor(10); 
 														    writeln; writeln;
@@ -442,19 +442,19 @@ Begin
  			      	           6: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('6) A XYZ Ltda deu + 20% do valor do salário aos funcionários com tempo => 10 anos e de 10% aos demais.');
-																Writeln('Solicite o tempo e o salário do funcionário e exibiba o valor da gratificação que ele irá receber.');
+																Writeln('6A XYZ Ltda deu + 20% do valor do salï¿½rio aos funcionï¿½rios com tempo => 10 anos e de 10% aos demais.');
+																Writeln('Solicite o tempo e o salï¿½rio do funcionï¿½rio e exibiba o valor da gratificaï¿½ï¿½o que ele irï¿½ receber.');
 			      		        				writeln;
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);
-                                write('Olá funcionário, por quanto tempo, em anos, vc tem trabalhado na empresa? ');
+                                write('Olï¿½ funcionï¿½rio, por quanto tempo, em anos, vc tem trabalhado na empresa? ');
                                 read(t); writeln;
-                                write('Qual seu salário atual? ');
+                                write('Qual seu salï¿½rio atual? ');
                                 read(s); writeln;
                                   if t < 10 then
-                                    write('Sua gratificação é de: ', (s*0.1):2:2, ' R$')
+                                    write('Sua gratificaï¿½ï¿½o ï¿½ de: ', (s*0.1):2:2, ' R$')
                                   else
-																	  write('Sua gratificação é de: ', (s*0.2):2:2, ' R$');  
+																	  write('Sua gratificaï¿½ï¿½o ï¿½ de: ', (s*0.2):2:2, ' R$');  
                                 TextColor(10); 
 														    writeln; writeln;
       										      Writeln('------------------------------------------------------------------'); writeln(' ');
@@ -465,25 +465,25 @@ Begin
 												7: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('7) Leia as notas das duas avaliações parciais e mostre a situação do aluno:');
+																Writeln('7Leia as notas das duas avaliaï¿½ï¿½es parciais e mostre a situaï¿½ï¿½o do aluno:');
 																writeln('aprovado ou n.');
-																writeln('   Se média => 7, aprovado ');
-																writeln('   Se média => 3, final ');
-																writeln('   Se média < 3, reprovado ');
+																writeln('   Se mï¿½dia => 7, aprovado ');
+																writeln('   Se mï¿½dia => 3, final ');
+																writeln('   Se mï¿½dia < 3, reprovado ');
 																writeln;
 																Writeln('==================================================================');  writeln(' ');
                                 TextColor(4); 
-																write('Qual sua nota na avaliação 1? ');
+																write('Qual sua nota na avaliaï¿½ï¿½o 1? ');
 																   readln(nt1); writeln;
-																write('Qual sua nota na avaliação 2? ');
+																write('Qual sua nota na avaliaï¿½ï¿½o 2? ');
 																   readln(nt2); writeln;
 																ma:= (nt1+nt2)/2;
-																  if (ma >= 7) and (ma > 3)  then  
- 			      	                       writeln('O aluno obteve média ', ma:2:2, ' e está aprovado.');
- 			      	                    if (ma >= 3) and (ma <= 6.99) then  
- 			      	                       writeln('O aluno obteve média ', ma:2:2, ' e precisa realizar a prova final.');
+																  if (ma >= 7and (ma > 3)  then  
+ 			      	                       writeln('O aluno obteve mï¿½dia ', ma:2:2, ' e estï¿½ aprovado.');
+ 			      	                    if (ma >= 3and (ma <= 6.99) then  
+ 			      	                       writeln('O aluno obteve mï¿½dia ', ma:2:2, ' e precisa realizar a prova final.');
  			      	                    if ma < 3 then
- 			      	                       writeln('O aluno obteve média ', ma:2:2, ' e está reprovado.');
+ 			      	                       writeln('O aluno obteve mï¿½dia ', ma:2:2, ' e estï¿½ reprovado.');
 																TextColor(10); 
 														    writeln; 
       										      Writeln('------------------------------------------------------------------'); writeln;
@@ -494,29 +494,29 @@ Begin
 												8: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('8) Recebeba 3 notas do estudante e imprima a média ponderada e atribua: A, B, C, D ou E');
+																Writeln('8) Recebeba 3 notas do estudante e imprima a mï¿½dia ponderada e atribua: A, B, C, D ou E');
 			      		        				writeln;
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);    
- 			      	                  write('Qual sua nota no trabalho de laboratório?  ');
+ 			      	                  write('Qual sua nota no trabalho de laboratï¿½rio?  ');
 																   readln(nt1); writeln;
-																write('Qual sua nota na avaliação semestral? ');
+																write('Qual sua nota na avaliaï¿½ï¿½o semestral? ');
 																   readln(nt2); writeln;
 																write('Qual sua nota no exame final? ');
 																   readln(nt3); writeln;
 																mp:= ( nt1*2 + nt2*3 + nt3*5)/(2+3+5);
-																   write('Sua média final é: ', mp:2:2);
+																   write('Sua mï¿½dia final ï¿½: ', mp:2:2);
 																   WRITELN; WRITELN;
 																if (mp >= 7) and (mp <= 8)then
-																    write('Você obteve o conceito B');
+																    write('Vocï¿½ obteve o conceito B');
 																if (mp >= 8) and (mp <= 10)then
-																    write('Você obteve o conceito A');
-																if (mp >= 6) and (mp <= 7)then
-																    write('Você obteve o conceito C');
-																if (mp >= 5) and (mp <= 6)then
-																    write('Você obteve o conceito D');
+																    write('Vocï¿½ obteve o conceito A');
+																if (mp >= 6and (mp <= 7)then
+																    write('Vocï¿½ obteve o conceito C');
+																if (mp >= 5and (mp <= 6)then
+																    write('Vocï¿½ obteve o conceito D');
 																if (mp < 5)then
-																    write('Você obteve o conceito E');									    
+																    write('Vocï¿½ obteve o conceito E');									    
  			      	                  TextColor(10); 
 														    writeln; writeln;  
       										      Writeln('------------------------------------------------------------------'); writeln;
@@ -527,36 +527,36 @@ Begin
 												9: Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('9) Informe o n° de hrs extras e o n° de hrs q o funcionário faltou e calc seu prêmio.');
+																Writeln('9Informe o nï¿½ de hrs extras e o nï¿½ de hrs q o funcionï¿½rio faltou e calc seu prï¿½mio.');
 			      		        				writeln;
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);
-																write('Qual seu número de horas extras na empresa Bons Amigos? ');
+																write('Qual seu nï¿½mero de horas extras na empresa Bons Amigos? ');
 																   readln(n1); writeln;
-																write('Quantas horas você faltou na empresa Bons Amigos? ');
+																write('Quantas horas vocï¿½ faltou na empresa Bons Amigos? ');
 																   readln(n2); clrscr; writeln;
 																TextColor(10);
-																Writeln('9) Informe o n° de hrs extras e o n° de hrs q o funcionário faltou e calc seu prêmio.');
+																Writeln('9) Informe o nï¿½ de hrs extras e o nï¿½ de hrs q o funcionï¿½rio faltou e calc seu prï¿½mio.');
 			      		        				writeln;
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);      
- 			      	                  write('O funcionário fez o total de ', n1:2:2, ' horas extras.');
+ 			      	                  write('O funcionï¿½rio fez o total de ', n1:2:2, ' horas extras.');
  			      	                     writeln;
-                                write('O funcionário faltou o total de ', n2:2:2, ' horas.');
+                                write('O funcionï¿½rio faltou o total de ', n2:2:2, ' horas.');
                                    writeln; 
                                 grat :=(0.667 - n2) + (n1);   
-                                   write ('O funcionário receberá ');
+                                   write ('O funcionï¿½rio receberï¿½ ');
                                       if (n1 > 40) then
-                                          writeln ('R$ 200 de prêmio')
-                                      else if (n1 >= 30) and (n1 < 40) then
-                                          writeln ('R$ 175 de prêmio.')
-                                      else if (n1 >= 20) and (n1 < 30) then
-                                          writeln ('R$ 150 de prêmio.')
-                                      else if (n1 >= 10) and (n1 < 20) then
-                                          writeln ('R$ 125 de prêmio.')
+                                          writeln ('R$ 200 de prï¿½mio')
+                                      else if (n1 >= 30and (n1 < 40then
+                                          writeln ('R$ 175 de prï¿½mio.')
+                                      else if (n1 >= 20and (n1 < 30then
+                                          writeln ('R$ 150 de prï¿½mio.')
+                                      else if (n1 >= 10and (n1 < 20then
+                                          writeln ('R$ 125 de prï¿½mio.')
                                       else if (n1 < 10) then
-                                          writeln ('R$ 100 de prêmio.');
-                                writeln ('O funcionário receberá R$ ', grat:2:2,' de gratificação de Natal.');
+                                          writeln ('R$ 100 de prï¿½mio.');
+                                writeln ('O funcionï¿½rio receberï¿½ R$ ', grat:2:2,' de gratificaï¿½ï¿½o de Natal.');
  			      	                  TextColor(10); 
 														    writeln;  writeln;  
       										      Writeln('------------------------------------------------------------------'); writeln;
@@ -567,16 +567,16 @@ Begin
 								        10 : Begin
 															  ClrScr;
                                 TextColor(10);
-																Writeln('10) Solicite o consumo do cliente em quilowatts e informe qual será o valor da conta de energia.');
+																Writeln('10Solicite o consumo do cliente em quilowatts e informe qual serï¿½ o valor da conta de energia.');
 			      		        				writeln;
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);     
  			      	                  write('Qual seu consumo em quilowatts? ');
  			      	                     readln(kW); writeln;
 																if kW < 10 then
- 			      	                     write('Você ira pagar 10 reais da conta de energia e R$:3,50 da taxa de iluminação.');
+ 			      	                     write('Vocï¿½ ira pagar 10 reais da conta de energia e R$:3,50 da taxa de iluminaï¿½ï¿½o.');
  			      	                  if kW >= 10 then
- 			      	                     write('Você ira pagar: ', (10+kW*1.4):2:2, ' e R$:3,50 da taxa de iluminação.');   
+ 			      	                     write('Vocï¿½ ira pagar: ', (10+kW*1.4):2:2, ' e R$:3,50 da taxa de iluminaï¿½ï¿½o.');   
  			      	                  TextColor(10); 
 														    writeln;  writeln;  
       										      Writeln('------------------------------------------------------------------'); 
@@ -588,70 +588,70 @@ Begin
 												11 : Begin
 															  ClrScr;
                                 TextColor(10);
-																writeln('11) Receba: a) o código do produto comprado; b) a quantidade comprada do produto. Calcule e exiba:');
+																writeln('11Receba: a) o cï¿½digo do produto comprado; ba quantidade comprada do produto. Calcule e exiba:');
                                 writeln;
-													      writeln('O preço unitário do produto comprado de acordo com a tabela A;');
+													      writeln('O preï¿½o unitï¿½rio do produto comprado de acordo com a tabela A;');
                                 writeln('O valor total da compra;');
                                 writeln('O desconto sobre o total da compra, segundo a tabela B;');
                                 writeln('O valor final da compra depois de aplicado o desconto.');
                                 writeln;
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);			
-																write('Qual o código do produto comprado? (1 até 40) ');
+																write('Qual o cï¿½digo do produto comprado? (1 atï¿½ 40');
 																  read(n1); writeln;
 																write('Qual a quantidade comprada do produto? ');
 																  read(n2); writeln;
 																  
-																if (n1 >= 1) and (n1 <= 10) then
+																if (n1 >= 1) and (n1 <= 10then
 																    begin
-																  write('O preço unitário do produto é R$:18,50.'); writeln;
+																  write('O preï¿½o unitï¿½rio do produto ï¿½ R$:18,50.'); writeln;
 																    n3 := n2*18.5;
-																  write('O valor total da compra é R$ ', n3:2:2); writeln;
+																  write('O valor total da compra ï¿½ R$ ', n3:2:2); writeln;
 																    end
 																    
-																else if(n1 >= 11) and (n1 <= 20) then
+																else if(n1 >= 11and (n1 <= 20) then
 																    begin
-																  write('O preço unitário do produto é R$:32,25.'); writeln;
+																  write('O preï¿½o unitï¿½rio do produto ï¿½ R$:32,25.'); writeln;
 																    n3 := n2*32.25;
-																  write('O valor total da compra é R$: ', n3:2:2); writeln
+																  write('O valor total da compra ï¿½ R$: ', n3:2:2); writeln
 																    end
 																    
-																else if (n1 >= 21) and (n1 <= 30) then
+																else if (n1 >= 21) and (n1 <= 30then
 																    begin
-																  write('O preço unitário do produto é R$:44,10.'); writeln;
+																  write('O preï¿½o unitï¿½rio do produto ï¿½ R$:44,10.'); writeln;
 																    n3 := n2*44.1;
-																  write('O valor total da compra é R$: ', n3:2:2); writeln
+																  write('O valor total da compra ï¿½ R$: ', n3:2:2); writeln
 																    end
 																    
-																else if (n1 >= 31) and (n1 <= 40) then  
+																else if (n1 >= 31) and (n1 <= 40then  
 																    begin
-																  write('O preço unitário do produto é R$:57,78.'); writeln;
+																  write('O preï¿½o unitï¿½rio do produto ï¿½ R$:57,78.'); writeln;
 																    n3 := n2*57.78;
-																  write('O valor total da compra é R$: ', n3:2:2); writeln;
+																  write('O valor total da compra ï¿½ R$: ', n3:2:2); writeln;
 																    end;
 																    
 																if n3 < 1500 then
 																    begin
-																  write('O valor do desconto aplicado sobre o valor total da compra é de 2,5%'); writeln;
+																  write('O valor do desconto aplicado sobre o valor total da compra ï¿½ de 2,5%'); writeln;
 																    n4:=n3*0.025;
 																    va:= n3 - n4;
-																	write('O valor final da compra depois de aplicado o desconto é de R$: ', va:2:2 )
+																	write('O valor final da compra depois de aplicado o desconto ï¿½ de R$: ', va:2:2 )
 																    end
 																    
 																else if (n3 > 1500) and (n3 < 3000) then
 																    begin
-																  write('O valor do desconto aplicado sobre o valor total da compra é de 5%'); writeln;
+																  write('O valor do desconto aplicado sobre o valor total da compra ï¿½ de 5%'); writeln;
 																    n4 := n3*0.05;
 																    va := n3 - n4;
-																  write('O valor final da compra depois de aplicado o desconto é de R$: ', va:2:2)
+																  write('O valor final da compra depois de aplicado o desconto ï¿½ de R$: ', va:2:2)
 																    end
 																    
-																else if (n3 > 3000) then
+																else if (n3 > 3000then
 																    begin
-																  write('O valor do desconto aplicado sobre o valor total da compra é de 10%'); writeln;
+																  write('O valor do desconto aplicado sobre o valor total da compra ï¿½ de 10%'); writeln;
 																  n4 := n3*0.1;
 																  va := n3 - n4;
-																	write('O valor final da compra depois de aplicado o desconto é de R$: ', va:2:2);
+																	write('O valor final da compra depois de aplicado o desconto ï¿½ de R$: ', va:2:2);
 																    end;
 																    
 																writeln;  writeln;  
@@ -667,7 +667,7 @@ Begin
              textbackground(4);
              Gotoxy (20,15);
              Write (' <= Acesso Negado! Tecle Algo para continuar.');    // Desvio condicional Para resultado: FALSE
-             Readkey;  { Aguarda até uma tecla seja pressionada }	             
+             Readkey;  { Aguarda atï¿½ uma tecla seja pressionada }	             
           end;  
          end;
          end
@@ -675,8 +675,8 @@ Begin
      
 		 begin
         Gotoxy (20,14);
-        Writeln ('Usuário Inválido, Acesso Negado! Tecle Algo para continuar.');  // Desvio condicional Para resultado: FALSE do teste do código do usuário  
-        Readkey;  { Aguarda até uma tecla seja pressionada }	             
+        Writeln ('Usuï¿½rio Invï¿½lido, Acesso Negado! Tecle Algo para continuar.');  // Desvio condicional Para resultado: FALSE do teste do cï¿½digo do usuï¿½rio  
+        Readkey;  { Aguarda atï¿½ uma tecla seja pressionada }	             
      end;
 			end;																
 End.
